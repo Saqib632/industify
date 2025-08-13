@@ -25,6 +25,7 @@ const Top = () => {
         <FaLinkedinIn className="w-3 h-3 sm:w-4 sm:h-4" />
         <FaTiktok className="w-3 h-3 sm:w-4 sm:h-4"/>
         <FaWhatsapp className="w-3 h-3 sm:w-4 sm:h-4"/>
+        <FaWhatsapp className="w-3 h-3 sm:w-4 sm:h-4"/>
       </div>
     </div>
   )
