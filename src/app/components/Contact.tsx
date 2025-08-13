@@ -3,6 +3,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa";
 
 const Top = () => {
   return (
@@ -21,6 +22,8 @@ const Top = () => {
         <FaTwitter className="w-3 h-3 sm:w-4 sm:h-4" />
         <AiFillInstagram className="w-3 h-3 sm:w-4 sm:h-4" />
         <FaLinkedinIn className="w-3 h-3 sm:w-4 sm:h-4" />
+        <FaTiktok className="w-3 h-3 sm:w-4 sm:h-4"/>
+        
       </div>
     </div>
   )
