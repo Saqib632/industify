@@ -5,6 +5,12 @@ import Info from '@/app/components/ThreeCards'
 import Image from '@/app/components/WeareIndustify'
 import Slider2 from '@/app/components/OurIndustries'
 import Last from '@/app/components/ISOcertificate'
+import NavbarIndustify from './components/NavbarIndustify'
+import HeroSection from './components/HeroSection'
+import Thoughts from './components/Thoughts'
+import Latest from './components/Latest'
+import Footer from './components/Footer'
+
 
 const Page = () => {
   return (
@@ -15,6 +21,11 @@ const Page = () => {
       <Image />
       <Slider2 />
       <Last />
+     <NavbarIndustify />
+     <HeroSection />
+     <Latest />
+     <Thoughts />
+     <Footer />
     </div>
   )
 }
