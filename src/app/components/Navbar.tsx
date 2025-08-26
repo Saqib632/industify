@@ -39,10 +39,10 @@ const Nav = () => {
           <ul className='flex gap-6 xl:gap-10'> 
             <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>HOME</li>
             <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer' onClick={()=>router.push("./components/Projects")}>PROJECTS</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>OUR SERVICES</li>
+            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer' >OUR SERVICES</li>
             <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>PAGES</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>BLOGS</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>CONTACT</li>
+            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'onClick={()=>router.push("./components/Blog")}>BLOGS</li>
+            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer' onClick={()=>router.push("./components/Contact")}>CONTACT</li>
           </ul>
         </div>
 
