@@ -4,7 +4,7 @@ import { TbBrain } from "react-icons/tb";
 import { IoIosArrowDown, IoIosMenu, IoIosClose } from "react-icons/io";
 import { FaHeadset } from "react-icons/fa";
 import { useRouter } from 'next/navigation'
-const Nav = () => {
+const Nav = ({ bgWhite = false }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('ENG');
@@ -23,27 +23,27 @@ const Nav = () => {
   return (
     <>
       {/* Desktop Navigation */}
-      <div className='absolute top-9 left-0 w-full bg-black sm:bg-black/30 h-25 flex items-center justify-between  '>
+      <div className={`absolute top-9 left-0 w-full ${bgWhite ? 'bg-white' : 'bg-black sm:bg-black/30'} h-25 flex items-center justify-between`}>
         <div className='flex items-center ml-10'>
           <div className='-skew-x-8 bg-[#398ace] h-[50px] w-[50px] ml-0 sm:ml-10 rounded-[3px] flex items-center justify-center text-[40px] text-white'>
             <TbBrain />
           </div>
           <div className='ml-3'>
-            <div className='text-[30px] sm:text-[40px] text-white italic leading-none'>Industify</div>
-            <div className='text-white text-[12px] sm:text-[15px] italic uppercase tracking-wider -mt-1 font-bold'>Corporation</div>
+            <div className={`text-[30px] sm:text-[40px] ${bgWhite ? 'text-black' : 'text-white'} italic leading-none`}>Industify</div>
+            <div className={`text-[12px] sm:text-[15px] italic uppercase tracking-wider -mt-1 font-bold ${bgWhite ? 'text-black' : 'text-white'}`}>Corporation</div>
           </div>
         </div>
 
         {/* Desktop Menu */}
         <div className='hidden lg:flex'>
           <ul className='flex gap-6 xl:gap-10'> 
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>HOME</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer' onClick={()=>router.push("./components/Projects")}>PROJECTS</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>OUR SERVICES</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>PAGES</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>BLOGS</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>CONTACT</li>
-          </ul>
+  <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`}>HOME</li>
+  <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`} onClick={()=>router.push("/components/Project")}>PROJECTS</li>
+  <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`}>OUR SERVICES</li>
+  <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`}>PAGES</li>
+  <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`}>BLOGS</li>
+  <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`}>CONTACT</li>
+</ul>
         </div>
 
         <div className='hidden lg:flex items-center'>
