@@ -9,7 +9,7 @@ import NavbarIndustify from './components/NavbarIndustify'
 import HeroSection from './components/HeroSection'
 import Thoughts from './components/Thoughts'
 import Latest from './components/Latest'
-import Footer from './components/Footer'
+
 
 
 const Page = () => {
@@ -25,7 +25,7 @@ const Page = () => {
      <HeroSection />
      <Latest />
      <Thoughts />
-     <Footer />
+     
     </div>
   )
 }

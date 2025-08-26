@@ -116,7 +116,6 @@ const Page = () => {
               />
               <textarea
                 placeholder="Message"
-                rows="4"
                 className="w-full px-4 py-3 bg-[#1a1b20] rounded focus:outline-none"
               ></textarea>
               <button
@@ -175,7 +174,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      
     </div>
   );
 };

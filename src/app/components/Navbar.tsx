@@ -4,7 +4,8 @@ import { TbBrain } from "react-icons/tb";
 import { IoIosArrowDown, IoIosMenu, IoIosClose } from "react-icons/io";
 import { FaHeadset } from "react-icons/fa";
 import { useRouter } from 'next/navigation'
-const Nav = () => {
+
+const Nav = ({ bgWhite = false }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('ENG');
@@ -19,30 +20,32 @@ const Nav = () => {
     setSelectedLanguage(languageCode);
     setIsDropdownOpen(false);
   };
-   const router = useRouter();
+
+  const router = useRouter();
+
   return (
     <>
       {/* Desktop Navigation */}
-      <div className='absolute top-9 left-0 w-full bg-black sm:bg-black/30 h-25 flex items-center justify-between  '>
+      <div className={`absolute top-9 left-0 w-full ${bgWhite ? 'bg-white' : 'bg-black sm:bg-black/30'} h-25 flex items-center justify-between`}>
         <div className='flex items-center ml-10'>
           <div className='-skew-x-8 bg-[#398ace] h-[50px] w-[50px] ml-0 sm:ml-10 rounded-[3px] flex items-center justify-center text-[40px] text-white'>
             <TbBrain />
           </div>
           <div className='ml-3'>
-            <div className='text-[30px] sm:text-[40px] text-white italic leading-none'>Industify</div>
-            <div className='text-white text-[12px] sm:text-[15px] italic uppercase tracking-wider -mt-1 font-bold'>Corporation</div>
+            <div className={`text-[30px] sm:text-[40px] ${bgWhite ? 'text-black' : 'text-white'} italic leading-none`}>Industify</div>
+            <div className={`text-[12px] sm:text-[15px] italic uppercase tracking-wider -mt-1 font-bold ${bgWhite ? 'text-black' : 'text-white'}`}>Corporation</div>
           </div>
         </div>
 
         {/* Desktop Menu */}
         <div className='hidden lg:flex'>
           <ul className='flex gap-6 xl:gap-10'> 
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>HOME</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer' onClick={()=>router.push("./components/Projects")}>PROJECTS</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer' >OUR SERVICES</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'>PAGES</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer'onClick={()=>router.push("./components/Blog")}>BLOGS</li>
-            <li className='text-white font-bold text-[13px] hover:text-gray-300 cursor-pointer' onClick={()=>router.push("./components/Contact")}>CONTACT</li>
+            <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`}>HOME</li>
+            <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`} onClick={()=>router.push("/components/Projects")}>PROJECTS</li>
+            <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`}>OUR SERVICES</li>
+            <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`}>PAGES</li>
+            <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`} onClick={()=>router.push("/components/Blog")}>BLOGS</li>
+            <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`} onClick={()=>router.push("/components/Contact")}>CONTACT</li>
           </ul>
         </div>
 
@@ -51,7 +54,7 @@ const Nav = () => {
           <div className='relative mr-4'>
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className='flex items-center gap-2 text-white hover:text-gray-300 transition-colors'
+              className={`flex items-center gap-2 ${bgWhite ? 'text-black' : 'text-white'} hover:text-gray-300 transition-colors`}
             >
               <span className='text-sm font-medium'>{selectedLanguage}</span>
               <IoIosArrowDown className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
@@ -93,7 +96,7 @@ const Nav = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className='lg:hidden text-white text-3xl'
+          className={`${bgWhite ? 'text-black' : 'text-white'} lg:hidden text-3xl`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <IoIosClose /> : <IoIosMenu />}
@@ -105,7 +108,7 @@ const Nav = () => {
         <div className='lg:hidden absolute top-24 left-0 w-full bg-black/90 z-50 pt-4 pb-6 px-4'>
           <ul className='flex flex-col gap-4'> 
             <li className='text-white font-bold text-[16px] hover:text-gray-300 cursor-pointer py-2 border-b border-gray-700'>HOME</li>
-            <li className='text-white font-bold text-[16px] hover:text-gray-300 cursor-pointer py-2 border-b border-gray-700' onClick={()=>router.push('/components/Projects/Nav')}>PROJECTS</li>
+            <li className='text-white font-bold text-[16px] hover:text-gray-300 cursor-pointer py-2 border-b border-gray-700' onClick={()=>router.push('/components/Projects')}>PROJECTS</li>
             <li className='text-white font-bold text-[16px] hover:text-gray-300 cursor-pointer py-2 border-b border-gray-700'>OUR SERVICES</li>
             <li className='text-white font-bold text-[16px] hover:text-gray-300 cursor-pointer py-2 border-b border-gray-700'>PAGES</li>
             <li className='text-white font-bold text-[16px] hover:text-gray-300 cursor-pointer py-2 border-b border-gray-700'>BLOGS</li>
@@ -143,8 +146,6 @@ const Nav = () => {
 
           {/* Mobile Contact Info */}
           <div className='flex items-center mt-4 bg-[#2e649b] p-3 rounded'>
-
-          </div>
             <div className='bg-white rounded-full p-2'>
               <FaHeadset className='text-[#2e649b] text-lg' />
             </div>
@@ -153,7 +154,7 @@ const Nav = () => {
               <div className='text-[16px] italic ml-2'>1-800-987-6543</div>
             </div>
           </div>
-       
+        </div>
       )}
     </>
   )
