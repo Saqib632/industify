@@ -37,7 +37,7 @@ const Nav = ({ bgWhite = false }) => {
         {/* Desktop Menu */}
         <div className='hidden lg:flex'>
           <ul className='flex gap-6 xl:gap-10'> 
-  <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`}>HOME</li>
+  <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`} onClick={()=>router.push("/")}>HOME</li>
   <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`} onClick={()=>router.push("/components/Project")}>PROJECTS</li>
   <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`}>OUR SERVICES</li>
   <li className={`${bgWhite ? 'text-black' : 'text-white'} font-bold text-[13px] hover:text-gray-300 cursor-pointer`}>PAGES</li>
