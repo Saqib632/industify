@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from "next/image";
+import NextImage from "next/image";
 
 const Last = () => {
   return (
@@ -32,7 +32,7 @@ const Last = () => {
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-0 border-4 sm:border-8 border-orange-600 overflow-hidden" style={{ height: 'auto', minHeight: '250px' }}>
             <div className="flex-1 p-4 flex flex-col gap-6 sm:gap-20 justify-center text-center sm:text-left">
               <div className="text-sm sm:text-[15px] font-medium">
-                World's Leading<br className="hidden sm:block" />Industry <br className="hidden sm:block" />Corporation
+                World&apos;s Leading<br className="hidden sm:block" />Industry <br className="hidden sm:block" />Corporation
               </div>
               <div className="flex items-center sm:items-end justify-center sm:justify-start gap-2">
                 <span className="text-4xl sm:text-5xl font-light">47</span>
@@ -42,7 +42,7 @@ const Last = () => {
               </div>
             </div>
             <div className="relative w-40 h-40 sm:w-60 sm:h-60 flex-shrink-0">
-              <Image
+              <NextImage
                 src="/image10.jpg"
                 alt="Businessman"
                 width={240}
