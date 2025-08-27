@@ -1,6 +1,7 @@
 import React from 'react'
+import Image from "next/image";
 
-const Image = () => {
+const WeareIndustify = () => {
   return (
   <div className="bg-white py-12   flex justify-center items-center min-h-screen  lg:min-h-[900px] ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-7xl items-center mt-30">
@@ -23,11 +24,12 @@ const Image = () => {
         <div className="flex justify-center items-center">
           <div className="relative">
             <div className="absolute -top-10 -left-10 w-full h-full border-10 border-[#46a1e2] z-10"></div>
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
               alt="Industify Lab"
+              width={400}
+              height={400}
               className="relative w-[400px] h-[400px] object-cover shadow-xl z-20"
-              
             />
           </div>
         </div>
@@ -36,5 +38,5 @@ const Image = () => {
   )
 }
 
-export default Image
+export default WeareIndustify
 

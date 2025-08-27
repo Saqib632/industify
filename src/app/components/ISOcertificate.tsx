@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 
 const Last = () => {
   return (
@@ -41,9 +42,11 @@ const Last = () => {
               </div>
             </div>
             <div className="relative w-40 h-40 sm:w-60 sm:h-60 flex-shrink-0">
-              <img
-                src="image10.jpg"
+              <Image
+                src="/image10.jpg"
                 alt="Businessman"
+                width={240}
+                height={240}
                 className="w-full h-full object-cover"
               />
               {/* Rating Badge */}

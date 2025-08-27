@@ -27,7 +27,7 @@ const Page = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
           {/* Logo */}
           <div className="cursor-pointer px-4 md:px-12">
-            <img src="/logo-light.png" alt="logo" className="h-10 sm:h-12 md:h-auto" />
+            <Image src="/logo-light.png" alt="logo" width={120} height={48} className="h-10 sm:h-12 md:h-auto" />
           </div>
           
           {/* Dropdown + Call Info */}
@@ -120,14 +120,14 @@ const Page = () => {
             </div>
 
             <h2 className="text-2xl md:text-3xl font-semibold text-[#14141c] mb-4 leading-snug">
-              Laing O'Rourke: Moves, projects and bids
+              Laing O&apos;Rourke: Moves, projects and bids
             </h2>
 
             <p className="text-gray-600 text-base leading-relaxed mb-6">
               Seymour Whyte employs 475 people and generated revenue of A$433 million
               in the fiscal year ended on 30 June 2017. Founded in 1987, Seymour
               Whyte is a well-known Australian company operating in the fields of
-              civil engineering. Acquisition of 100% of Seymour Whyte's shares 2017
+              civil engineering. Acquisition of 100% of Seymour Whyte&apos;s shares 2017
             </p>
 
             <button className="px-4 py-2 bg-[#081225] text-white rounded hover:bg-[#d24e1a] duration-300 cursor-pointer">
@@ -149,7 +149,7 @@ const Page = () => {
           </div>
           <div className="bg-[#d24e1a] text-white p-8 md:p-10 flex flex-col justify-center items-center rounded-b-lg shadow-lg h-full">
             <h1 className="text-xl md:text-2xl font-semibold leading-snug mb-8 text-center">
-              Let's get started!<br />
+              Let&apos;s get started!<br />
               Contact us for a free<br />
               quote on your next<br />
               home improvement project.
@@ -206,7 +206,7 @@ const Page = () => {
             </h2>
 
             <p className="text-gray-600 text-base leading-relaxed mb-6">
-              Seymour Whyte employs 475 people and generated revenue of A$433 million in the fiscal year ended on 30 June 2017. Founded in 1987, Seymour Whyte is a well-known Australian company operating in the fields of civil engineering. Acquisition of 100% of Seymour Whyte's shares 2017
+              Seymour Whyte employs 475 people and generated revenue of A$433 million in the fiscal year ended on 30 June 2017. Founded in 1987, Seymour Whyte is a well-known Australian company operating in the fields of civil engineering. Acquisition of 100% of Seymour Whyte&apos;s shares 2017
             </p>
 
             <button className="px-4 py-2 bg-[#081225] text-white rounded hover:bg-[#d24e1a] duration-300 cursor-pointer">
@@ -312,7 +312,7 @@ const Page = () => {
             </h2>
 
             <p className="text-gray-600 text-base leading-relaxed mb-6">
-              Seymour Whyte employs 475 people and generated revenue of A$433 million in the fiscal year ended on 30 June 2017. Founded in 1987, Seymour Whyte is a well-known Australian company operating in the fields of civil engineering. Acquisition of 100% of Seymour Whyte's shares 2017
+              Seymour Whyte employs 475 people and generated revenue of A$433 million in the fiscal year ended on 30 June 2017. Founded in 1987, Seymour Whyte is a well-known Australian company operating in the fields of civil engineering. Acquisition of 100% of Seymour Whyte&apos;s shares 2017
             </p>
 
             <button className="px-4 py-2 bg-[#081225] text-white rounded hover:bg-[#d24e1a] duration-300 cursor-pointer">
@@ -360,7 +360,7 @@ const Page = () => {
           Seymour Whyte employs 475 people and generated revenue of A$433
           million in the fiscal year ended on 30 June 2017. Founded in 1987,
           Seymour Whyte is a well-known Australian company operating in the
-          fields of civil engineering. Acquisition of 100% of Seymour Whyte's
+          fields of civil engineering. Acquisition of 100% of Seymour Whyte&apos;s
           shares 2017
         </p>
 

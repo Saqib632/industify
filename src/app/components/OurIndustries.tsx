@@ -56,7 +56,7 @@ export default function IndustriesSection() {
   };
 
   const getVisible = () => {
-    let arr = [];
+  const arr = [];
     for (let i = 0; i < visibleCount; i++) {
       arr.push(industries[(startIdx + i) % total]);
     }

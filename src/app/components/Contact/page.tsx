@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FaHeadset } from "react-icons/fa";
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
@@ -24,7 +25,7 @@ const Page = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
           {/* Logo */}
           <div className="cursor-pointer px-4 md:px-12">
-            <img
+              <Image
               src="/logo-dark.png"
               alt="logo"
               className="h-10 sm:h-12 md:h-auto"

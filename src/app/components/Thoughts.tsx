@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface Item {
   day: string;
@@ -52,9 +53,11 @@ const Thoughts: React.FC = () => {
             <div key={index} className="flex flex-col w-full">
               {/* Image + Date */}
               <div className="relative h-40 sm:h-48 md:h-56 lg:h-64 rounded-lg overflow-hidden">
-                <img
+                <Image
                   src={item.image}
                   alt={item.alt}
+                  width={320}
+                  height={256}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />

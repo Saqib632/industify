@@ -1,5 +1,6 @@
 "use client"
 import React from 'react';
+import Image from "next/image";
 import { FiMail,  } from 'react-icons/fi';
 import { FaCaretUp } from "react-icons/fa";
 const Footer = () => {
@@ -44,9 +45,11 @@ const Footer = () => {
             {/* Logo & Description */}
             <div>
               <div className="mb-5 flex justify-center sm:justify-start">
-                <img
+                <Image
                   src="/logo-light.png"
                   alt="Industify Logo"
+                  width={120}
+                  height={40}
                   className="h-8 sm:h-10"
                 />
               </div>

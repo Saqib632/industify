@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Latest = () => {
@@ -42,9 +43,11 @@ const Latest = () => {
             className='flex flex-col sm:flex-row bg-[#181e2b] overflow-hidden'
           >
             <div className='h-[220px] sm:h-[350px] w-full sm:w-[390px]'>
-              <img
+              <Image
                 src={src}
                 alt="Industify project"
+                width={390}
+                height={350}
                 className='w-full h-full object-cover'
               />
             </div>
